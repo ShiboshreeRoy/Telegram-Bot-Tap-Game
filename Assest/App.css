@@ -1,0 +1,220 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 30px;
+    width: 500px;
+    max-width: 100%;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #4e73df;
+    font-weight: 600;
+}
+
+.score, .high-score, .timer {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#score, #high-score, #timer {
+    font-weight: 600;
+    color: #4e73df;
+}
+
+/* Progress Bar */
+.progress-bar {
+    width: 100%;
+    background-color: #f1f3f8;
+    border-radius: 15px;
+    height: 10px;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #4e73df;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+button:focus {
+    outline: none;
+}
+
+.tap-btn {
+    background-color: #4e73df;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.tap-btn:hover {
+    background-color: #365aa3;
+}
+
+.premium-btn {
+    background-color: #e91e63;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.premium-btn:hover {
+    background-color: #c2185b;
+}
+
+.pause-btn {
+    background-color: #ff9800;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.pause-btn:hover {
+    background-color: #fb8c00;
+}
+
+.reset-btn {
+    background-color: #607d8b;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+.reset-btn:hover {
+    background-color: #455a64;
+}
+
+/* Mode Switch */
+.mode-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.mode-switch:hover {
+    transform: scale(1.1);
+    background-color: #f1f3f8;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #2c3e50;
+}
+
+body.dark-mode .container {
+    background-color: #34495e;
+    color: #ecf0f1;
+}
+
+body.dark-mode .score, body.dark-mode .high-score, body.dark-mode .timer {
+    color: #ecf0f1;
+}
+
+body.dark-mode .progress-bar {
+    background-color: #7f8c8d;
+}
+
+body.dark-mode .progress-bar-inner {
+    background-color: #1abc9c;
+}
+
+body.dark-mode .tap-btn {
+    background-color: #1abc9c;
+}
+
+body.dark-mode .tap-btn:hover {
+    background-color: #16a085;
+}
+
+body.dark-mode .premium-btn {
+    background-color: #f39c12;
+}
+
+body.dark-mode .premium-btn:hover {
+    background-color: #e67e22;
+}
+
+body.dark-mode .pause-btn {
+    background-color: #f39c12;
+}
+
+body.dark-mode .pause-btn:hover {
+    background-color: #e67e22;
+}
+
+body.dark-mode .reset-btn {
+    background-color: #7f8c8d;
+}
+
+body.dark-mode .reset-btn:hover {
+    background-color: #95a5a6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

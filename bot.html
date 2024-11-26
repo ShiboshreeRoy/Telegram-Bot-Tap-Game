@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tap Tap Coin Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./Assest/App.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tap Tap Coin Game</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="high-score">High Score: <span id="high-score">0</span></div>
+        <div class="timer" id="timer">Time: 10</div>
+        <div class="progress-bar">
+            <div id="progress-bar-inner" class="progress-bar-inner"></div>
+        </div>
+
+        <div class="button-container">
+            <button class="tap-btn" id="tap-btn"><i class="fas fa-hand-point-up"></i>Tap!</button>
+            <button class="premium-btn" id="premium-btn"><i class="fas fa-gem"></i>Go Premium</button>
+            <button class="pause-btn" id="pause-btn"><i class="fas fa-pause"></i>Pause</button>
+            <button class="reset-btn" id="reset-btn"><i class="fas fa-redo"></i>Reset</button>
+        </div>
+    </div>
+
+    <div class="mode-switch" id="mode-switch">
+        <i class="fas fa-moon"></i>
+    </div>
+    <script src="./config/app.js"></script>
+</body>
+</html>
